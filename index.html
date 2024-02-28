@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão de Beleza</title>
+    <link rel="stylesheet" href="./arquivo.css">
+      
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento no Salão de Beleza</h1>
+        <form id="appointmentForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="servico">Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="corte">Corte de Cabelo</option>
+                <option value="coloracao">Coloração</option>
+                <option value="manicure">Manicure</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </div>   
+    <div class="appointments">
+        <h2>Agendamentos Realizados</h2>
+        <div id="listaAgendamentos"></div>
+    </div>
+     <script src="./arquivo.js"></script>
+    
+</body>
+</html>
